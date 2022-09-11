@@ -10,22 +10,21 @@ int main(void)
 	int ones;
 	int twos;
 
-	for (zeros = 0; zeros <= 7; zeros++)
+	for (zeros = 0; zeros < 8; zeros++)
 	{
-		for (ones = zeros + 1; ones <= 8; ones++)
+		for (ones = zeros + 1; ones < 9; ones++)
 		{
-			for (twos = ones + 1; twos <= 9; twos++)
+			for (twos = ones + 1; twos < 10; twos++)
 			{
 				putchar((zeros % 10) + '0');
 				putchar((ones % 10) + '0');
 				putchar((twos % 10) + '0');
-
+				if (zeros == 7 && ones == 8 && twos == 9)
+				{
+					continue;
+				}
 				putchar(',');
 				putchar(' ');
-			}
-			if (zeros == 7 && ones == 8 && twos == 9)
-			{
-				continue;
 			}
 		}
 	}
