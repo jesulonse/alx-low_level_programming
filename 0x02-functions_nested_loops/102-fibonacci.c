@@ -5,7 +5,7 @@
  *
  * Return: No return
  */
-int main(int)
+int main(void)
 {
 	unsigned long count, a, b, c;
 	
