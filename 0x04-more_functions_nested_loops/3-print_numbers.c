@@ -2,9 +2,6 @@
 
 /**
  * print_numbers - function prints digits 0 to 9
- *
- * @n : input number
- *
  * Return: 0123456789
  */
 void print_numbers(void)
