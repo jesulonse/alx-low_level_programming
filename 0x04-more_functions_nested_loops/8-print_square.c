@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * print_square - print square shape of numbers
- * n as input parameter
+ * print_square - print square shape of size as input parameter
  *
- * @n: input parameter
+ * @size: input parameter
  *
  * Return: void
  */
