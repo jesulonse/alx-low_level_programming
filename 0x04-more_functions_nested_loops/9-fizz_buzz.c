@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - entry block
@@ -9,7 +10,7 @@
 int main(void)
 {
 	int n;
-	
+
 	for (n = 1; n <= 100; n++)
 	{
 		if (n % 15 == 0)
