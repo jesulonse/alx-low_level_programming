@@ -4,26 +4,27 @@
  * print_triangle - prints a triangle
  * @size: takes in a integer for size of triangle
  *
- * Return: void
+ * Return: 0
  */
 void print_triangle(int size)
 {
-	int row, column;
+	int i, j;
 
 	if (size <= 0)
 	{
 		_putchar('\n');
+		return;
 	}
-	for (row = 1; row < size; row++)
+	for (j = 1; j <= size; j++)
 	{
-		for (column = size - row; column > 0; column--)
+		for (i = size - j; i > 0; i--)
 		{
 			_putchar(' ');
-			for (column = row; column > 0; column--)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
 		}
+		for (i = j; i > 0; i--)
+		{
+			_putchar('#');
+		}
+		_putchar('\n');
 	}
 }
