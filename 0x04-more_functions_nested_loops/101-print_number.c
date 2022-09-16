@@ -9,7 +9,7 @@
  */
 void print_number(int n)
 {
-	unsigned int a, i;
+	unsigned int a;
 
 	if (n < 0)
 	{
@@ -20,12 +20,9 @@ void print_number(int n)
 	{
 		a = n;
 	}
-	i = 1000000000;
-	do {
-		if (i <= a || i == 1)
-		{
-			_putchar(a / i % 10 + '0');
-		}
-		i /= 10;
-	} while (i != 10);
+	if (a / 10)
+	{
+		print_number(a / 10);
+	}
+	_putchar((a % 10) + '0');
 }
