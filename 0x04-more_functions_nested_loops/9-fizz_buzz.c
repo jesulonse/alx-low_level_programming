@@ -1,18 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - This prints fizz at the multiple of 3
- * and buzz at multiple of 5 and fizzbuzz at the multiple of 3 and 5
+ * main - entry block
+ * @void: no arguments
  *
  * Return: 0 Success
  */
 int main(void)
 {
 	int n;
-
-	putchar('1');
-	putchar(' ');
-	for (n = 2; n <= 100; n++)
+	
+	for (n = 1; n <= 100; n++)
 	{
 		if (n % 15 == 0)
 		{
