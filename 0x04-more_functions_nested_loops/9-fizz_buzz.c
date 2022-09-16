@@ -10,7 +10,8 @@ int main(void)
 {
 	int n;
 
-	for (n = 1; n <= 100; n++)
+	putchar('1');
+	for (n = 2; n <= 100; n++)
 	{
 		if (n % 15 == 0)
 		{
@@ -29,7 +30,6 @@ int main(void)
 			printf("%d ", n);
 		}
 	}
-	/*printf("Buzz");*/
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
