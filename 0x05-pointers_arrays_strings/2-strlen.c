@@ -4,7 +4,7 @@
 /**
  * _strlen - gives the length of a string
  *
- * @*s: input parameter
+ * @s: input parameter
  *
  * Return: NOthing
  */
