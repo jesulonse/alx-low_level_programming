@@ -10,21 +10,22 @@ char *rot13(char *n)
 {
 	int i, j;
 
-	char s1[] = "aAbBcCdDeEfFgGhHiIjJkKlLmM";
-	char s2[] = "nNoOpPqQrRsStTuUvVwWxXyYzZ";
+	char s1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char s2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	i = 0;
 	/*Ensuring that char is not emppty all through the iteration*/
-	for ( ; n[i] != 0; i++)
+	for ( ; n[i] != '\0'; i++)
 	{
 		j = 0;
-		/*Iterating through the 10 items of the array*/
-		for ( ; j < 10; j++)
+		/*Ensuring that char is not emppty all through the iteration*/
+		for ( ; s1[j] != '\0'; j++)
 		{
 			/*Checking if the elements of the array ae equal*/
 			if (n[i] == s1[j])
 			{
 				n[i] = s2[j];
+				break;
 			}
 		}
 	}
