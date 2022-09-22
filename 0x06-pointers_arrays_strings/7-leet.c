@@ -21,9 +21,9 @@ char *leet(char *n)
 		for ( ; j < 10; j++)
 		{
 			/*Checking if the elements of the array ae equal*/
-			if (n[i] == s1[i])
+			if (n[i] == s1[j])
 			{
-				n[i] = s2[i];
+				n[i] = s2[j];
 			}
 		}
 
