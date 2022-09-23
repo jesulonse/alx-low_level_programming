@@ -22,8 +22,9 @@ void print_number(int n)
 		m = n;
 	}
 	d = m;
+
 	count = 1;
-	/*initialize the counter and consider above 9*/
+	/**/
 	while (d > 9)
 	{
 		d /= 10;
@@ -31,6 +32,6 @@ void print_number(int n)
 	}
 	for ( ; count >= 1; count /= 10)
 	{
-		_putchar(((m / count) % 10) + 48)
+		_putchar(((m / count) % 10) + 48);
 	}
 }
