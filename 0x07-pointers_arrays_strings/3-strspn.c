@@ -4,11 +4,12 @@
 * _strspn - gets the length of a prefix substring
 * @s: string
 * @accept: contains bytes that may or may not compose
-* Return: Return: the number of bytes that compose the length
+i* Return: Return: the number of bytes that compose the length
 */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j;
+	int i;
+	int j;
 	unsigned int length;
 
 	length = 0;
@@ -24,12 +25,6 @@ unsigned int _strspn(char *s, char *accept)
 					return (length);
 				}
 			}
- 			/*
-			if (accept[j] == '\0')
-			{
-				return (length);
-			}
-			*/
 		}
 	}
 	return (length);
