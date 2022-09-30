@@ -50,6 +50,6 @@ int main(int argc, char *argv[])
 		}
 		result += b;
 	}
-	printf("%d\n", sum);
+	printf("%d\n", result);
 	return (0);
 }
