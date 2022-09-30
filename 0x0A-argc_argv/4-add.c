@@ -29,7 +29,7 @@ int num_checker(char *a)
 	return (num);
 }
 /**
-*@main - adds two positive numbers
+*main - adds two positive numbers
 *@argc: arguement count
 *@argv: array of pointers to arguement strings
 *Return: addition or 0 or error and 1
