@@ -3,20 +3,19 @@
 
 /**
 *main - prints the minimum number of coins to make change for a given amount
-*@argc: arguement count
-*@argv: array of pointers to arguement strings
+*@argc: argument count
+*@argv: array of pointers to argument strings
 *Return: number of coins or 1
 */
 int main(int argc, char *argv[])
 {
 	int amount, coins;
 
-	if (argc != 1)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	/*convert string to int*/
 	amount = atoi(argv[1]);
 	if (amount > 25)
 	{
