@@ -17,35 +17,23 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	amount = atoi(argv[1]);
-	if (amount > 25)
+	while (amount >= 25)
 	{
-		while (amount >= 25)
-		{
-			amount -= 25, coins++;
-		}
+		amount -= 25, coins++;
 	}
-	if (amount > 10 && amount < 25)
+	while (amount >= 10)
 	{
-		while (amount >= 10)
-		{
-			amount -= 10, coins++;
-		}
+		amount -= 10, coins++;
 	}
-	if (amount > 5 && amount < 10)
+	while (amount >= 5)
 	{
-		while (amount >= 5)
-		{
-			amount -= 5, coins++;
-		}
+		amount -= 5, coins++;
 	}
-	if (amount > 2 && amount < 5)
+	while (amount >= 2)
 	{
-		while (amount >= 2)
-		{
-			amount -= 2, coins++;
-		}
+		amount -= 2, coins++;
 	}
-	if (amount == 1 || amount == 2 || amount == 5 || amount == 10 || amount == 25)
+	if (amount == 1)
 	{
 		coins++;
 	}
