@@ -17,7 +17,7 @@ unsigned int _strlen(const char *s)
 {
 	unsigned int i;
 
-	for (i = 0, s[i]; i++)
+	for (i = 0; s[i]; i++)
 		;
 	return (i);
 }
@@ -32,7 +32,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int result, temp, expo;
 
 	if (!b)
-		return;
+		return(0);
 	result = temp = 0;
 	expo = 1;
 	for (i = _strlen(b) - 1; b[i]; i--, expo *= 2)
